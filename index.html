@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Jogo Do Mario - SesiSenai</title>
     <link rel="stylesheet" href="css/style.css">
-    </head>
+</head>
 
 <body>
 
@@ -22,19 +22,47 @@
                     <img src="media/mario.gif" alt="Mario" class="personagemEscolha">
                     <p>Mario</p>
                 </div>
-                </div>
-                <div id="gokuDiv" class="divPersonagem" value="goku" onclick="escolherPersonagem('goku')">
-                    <img src="media/goku.gif" alt="Goku" class="personagemEscolha">
-                    <p>Goku</p>
-                </div>
-                
             </div>
+            <div id="gokuDiv" class="divPersonagem" value="goku" onclick="escolherPersonagem('goku')">
+                <img src="media/goku.gif" alt="Goku" class="personagemEscolha">
+                <p>Goku</p>
+            </div>
+            <div id="gokuDiv" class="divPersonagem" value="goku" onclick="escolherPersonagem('goku')">
+                <img src="media/goku.gif" alt="Goku" class="personagemEscolha">
+                <p>Goku</p>
+            </div>
+
         </div>
+    </div>
     </div>
 
     <div class="game-over">
         <h1>Game Over</h1>
         <button id="restart-button">Reiniciar Jogo</button>
+        <div id="continua-reiniciar">
+            <button class="continuar-button" style="background-color: green; box-shadow: 0 4px #174126;"
+                onclick="Continuar('Continuar')">Continuar</button>
+            <button class="Reiniciar-button" style="background-color: red; box-shadow: 0 4px #812c2c;"
+                onclick="Reiniciar('Reiniciar')">Reiniciar</button>
+        </div>
+    
+    </div>
+    <div class="game-board">
+        <img src="./imagens/logoSenai.png" alt="Logo do Senai" width="150px">
+        <h1>Super Jogo do Mario</h1>
+        <img src="./media/mario.gif" alt="Mario" width="100px">
+        <img src="./imagens/clouds.png" alt="Nuvens" width="100px">
+        <img src="./imagens/ground.png" alt="Chão" width="100px">
+        <img src="./imagens/obstacle.png" alt="Obstáculo" width="100px">
+        <imag src="./imagens/pipe.png" alt="Canos" width="100px">
+        <div class="score-board">
+            <div class="score">Pontuação: <span id="score">0</span></div>
+            <div class="lives">Vidas: <span id="lives">3</span></div>
+        </div>
+        <div class="game-area" id="game-area">
+            <div class="character" id="character"></div>
+            <div class="obstacle" id="obstacle"></div>
+        </div>
 </body>
 <script src="./js/script.js"></script>
 
